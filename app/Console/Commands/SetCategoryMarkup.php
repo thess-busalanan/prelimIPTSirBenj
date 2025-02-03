@@ -44,13 +44,11 @@ class SetCategoryMarkup extends Command
             return;
         }
 
-        // Update retail prices for products in the specified category
         $category->products->each(function ($product) use ($rate) {
             $product->retail_price = $product->purchase_price * (1 + $rate);
             $product->save();
         });
 
-        // Log the markup history
         MarkupHistory::create([
             'date' => Carbon::now(),
             'mark_up_rate' => $rate

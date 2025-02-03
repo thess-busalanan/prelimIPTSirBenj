@@ -35,13 +35,11 @@ class SetMarkup extends Command
             return;
         }
 
-        // Update retail prices for all products
         Product::all()->each(function ($product) use ($rate) {
             $product->retail_price = $product->purchase_price * (1 + $rate);
             $product->save();
         });
 
-        // Log the markup history
         MarkupHistory::create([
             'date' => Carbon::now(),
             'mark_up_rate' => $rate
