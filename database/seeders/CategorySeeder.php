@@ -14,15 +14,15 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            ['name' => 'Canned Goods', 'description' => 'Various canned food items'],
-            ['name' => 'Dairy Products', 'description' => 'Milk, cheese, and other dairy products'],
-            ['name' => 'Noodles', 'description' => 'Different types of noodles and pasta'],
-            ['name' => 'Frozen Foods', 'description' => 'Frozen meals and ingredients'],
-            ['name' => 'Beverages', 'description' => 'Drinks including sodas, juices, and water'],
-            ['name' => 'Liquor', 'description' => 'Alcoholic beverages'],
-            ['name' => 'Snacks', 'description' => 'Chips, cookies, and other snack items'],
-            ['name' => 'Cleaning Products', 'description' => 'Household cleaning supplies'],
-            ['name' => 'School and Office Supplies', 'description' => 'Stationery and office essentials'],
+            ['category_name' => 'Canned Goods', 'description' => 'Various canned food items'],
+            ['category_name' => 'Dairy Products', 'description' => 'Milk, cheese, and other dairy products'],
+            ['category_name' => 'Noodles', 'description' => 'Different types of noodles and pasta'],
+            ['category_name' => 'Frozen Foods', 'description' => 'Frozen meals and ingredients'],
+            ['category_name' => 'Beverages', 'description' => 'Drinks including sodas, juices, and water'],
+            ['category_name' => 'Liquor', 'description' => 'Alcoholic beverages'],
+            ['category_name' => 'Snacks', 'description' => 'Chips, cookies, and other snack items'],
+            ['category_name' => 'Cleaning Products', 'description' => 'Household cleaning supplies'],
+            ['category_name' => 'School and Office Supplies', 'description' => 'Stationery and office essentials'],
         ];
 
         foreach ($categories as $category) {
