@@ -44,6 +44,8 @@ class SetCategoryMarkup extends Command
             return;
         }
 
+
+        
         $category->products->each(function ($product) use ($rate) {
             $product->retail_price = $product->purchase_price * (1 + $rate);
             $product->save();

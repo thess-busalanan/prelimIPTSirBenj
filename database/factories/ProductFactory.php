@@ -26,4 +26,6 @@ class ProductFactory extends Factory
             'quantity' => $this->faker->numberBetween(1, 100)
         ];
     }
+
+    
 }

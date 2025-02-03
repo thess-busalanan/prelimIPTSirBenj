@@ -40,6 +40,8 @@ class SetMarkup extends Command
             $product->save();
         });
 
+
+        
         MarkupHistory::create([
             'date' => Carbon::now(),
             'mark_up_rate' => $rate
